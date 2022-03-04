@@ -1,0 +1,63 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 60px;
+}
+
+body {
+  color: #e4e4e4;
+  background-color: #141313;
+}
+
+.led {
+  border: none;
+  border-radius: 5%;
+  background: none;
+  transition-duration: 0.2s;
+}
+
+.led:hover {
+  background:fixed;
+  background-color: #464646;
+}
+
+.led:active {
+  background:fixed;
+  background-color: #aaaaaa;
+}
+
+.text {
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 5%;
+  font-size: large;
+  color:#e4e4e4
+}
+
+button {
+  color: #e4e4e4;
+  border: solid 1px #8f8f8f;
+  border-radius: 5%;
+  font-size: large;
+  background-color: #2c2c2c;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(72, 72, 72);
+}
+
+button:active {
+  background-color: #e4e4e4;
+  color:rgb(72, 72, 72);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
