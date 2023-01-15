@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <title>CSScout</title>
+
+</head>
+
+<body class="bg-dark text-light">
+
+
+
+    <h3 class="m-3">CSSCout</h3>
+    <div class="m-3 p-3 bg-secondary rounded shadow">
+        <h2>Charged Up</h2>
+        <div class="form-outline">
+            <input type="number" id="team-number" class="form-control" />
+            <label class="form-label" for="team-number">Team Number</label>
+        </div>
+        <hr>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="left-auto" class="form-check-input">
+            <label for="left-auto" class="form-check-label">Left Auto</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="docked-engaged" class="form-check-input">
+            <label for="docked-engaged" class="form-check-label">Docked and Engaged</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="docked" class="form-check-input">
+            <label for="docked" class="form-check-label">Docked and NOT Engaged</label>
+        </div>
+        <hr>
+        <div class="form-outline">
+            <input type="number" id="links" class="form-control" />
+            <label class="form-label" for="links">Number of Links</label>
+        </div>
+    </div>
+    <div id="qrcode" class="m-3"></div>
+    <script src="vendor/qrcode.min.js">
+
+    </script>
+
+    <script>
+        var qrcode = new QRCode('qrcode', '');
+    </script>
+    <script src="main.js"></script>
+
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("sw.js", {
+                scope: '.' // <--- THIS BIT IS REQUIRED
+            }).then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
+</body>
+
+</html>
