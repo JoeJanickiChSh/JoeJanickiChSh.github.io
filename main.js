@@ -21,6 +21,7 @@ setInterval(() => {
   format += `${loadval('links')}|`
   format += `${loadval('name')}|`
 
+  load('title').innerHTML = `Match ${loadval('match')} - Team ${loadval('team-number')}`
 
 
   qrcode.clear(); // clear the code.

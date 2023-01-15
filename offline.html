@@ -8,6 +8,11 @@
     <link href="vendor/bootstrap.min.css" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <title>CSScout</title>
+    <style>
+        input[type=number]::-webkit-inner-spin-button {
+            opacity: 1
+        }
+    </style>
 
 </head>
 
@@ -15,7 +20,7 @@
 
 
 
-    <h3 class="m-3">CSSCout</h3>
+    <h1 class="m-3">CSSCout</h1>
     <div class="m-3 p-3 bg-secondary rounded shadow">
         <h2>Charged Up</h2>
         <div class="form-outline">
@@ -50,6 +55,7 @@
             <label class="form-label" for="name">Name of Scouter</label>
         </div>
     </div>
+    <h3 class="m-3" id="title"></h3>
     <div id="qrcode" class="m-3"></div>
     <script src="vendor/qrcode.min.js">
 
