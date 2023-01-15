@@ -1,6 +1,6 @@
 /**
  *
- * TEAM|MATCH|LEFT AUTO|DOCKED AND ENGAGED|DOCKED AND NOT ENGAGED|NUMLINKS|NAME|
+ * TEAM|MATCH|LEFT AUTO|DOCKED AND ENGAGED|DOCKED AND NOT ENGAGED|NUMLINKS|WIN|NAME|
  *
  */
 
@@ -19,6 +19,7 @@ setInterval(() => {
   format += `${loadbool('docked-engaged')}|`
   format += `${loadbool('docked')}|`
   format += `${loadval('links')}|`
+  format += `${loadbool('win')}|`
   format += `${loadval('name')}|`
 
   load('title').innerHTML = `Match ${loadval('match')} - Team ${loadval('team-number')}`
