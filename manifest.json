@@ -1,11 +1,11 @@
 {
     "name": "CSScout",
     "short_name": "CSScout",
-    "theme_color": "#ffcbe4",
-    "background_color": "#fa99ca",
+    "theme_color": "#ffffff",
+    "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
-    "start_url": "http://192.168.0.101",
-    "description": "Blog and Resume for Christine Dodrill",
-    "orientation": "any"
+    "start_url": "https://joejanickichsh.github.io/",
+    "description": "Scouting Software Demo",
+    "orientation": "portrait"
 }
