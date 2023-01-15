@@ -19,8 +19,12 @@
     <div class="m-3 p-3 bg-secondary rounded shadow">
         <h2>Charged Up</h2>
         <div class="form-outline">
-            <input type="number" id="team-number" class="form-control" />
+            <input type="number" id="team-number" class="form-control" value="0" />
             <label class="form-label" for="team-number">Team Number</label>
+        </div>
+        <div class="form-outline">
+            <input type="number" id="match" class="form-control" value="0" />
+            <label class="form-label" for="match">Match Number</label>
         </div>
         <hr>
         <div class="form-check form-switch">
@@ -37,8 +41,13 @@
         </div>
         <hr>
         <div class="form-outline">
-            <input type="number" id="links" class="form-control" />
+            <input type="number" id="links" class="form-control" value="0" />
             <label class="form-label" for="links">Number of Links</label>
+        </div>
+        <hr>
+        <div class="form-outline">
+            <input type="text" id="name" class="form-control" />
+            <label class="form-label" for="name">Name of Scouter</label>
         </div>
     </div>
     <div id="qrcode" class="m-3"></div>
